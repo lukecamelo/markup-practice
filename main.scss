@@ -1,6 +1,66 @@
-$navbackground: #BADA55;
+$navbackground: #ccc;
 
 .navbar {
-  width: 100%;
   background-color: $navbackground;
+  display: flex;
+  justify-content: flex-end;
+
+  .nav-item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    &:hover {
+      background-color: darkgray;
+    }
+
+  }
+}
+
+.header {
+  .container {
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+
+    .header-text {
+      font-family: 'Open Sans', sans-serif;
+      padding: 2rem;
+      color: white;
+
+      .tagline {
+        margin-top: 0;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+
+  }
+}
+
+.sidebyside {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    .left {
+      width: 50%;
+      padding: 2em;
+      background-color: aquamarine;
+    }
+    .right {
+      width: 50%;
+      padding: 2em;
+      color: white; 
+      background-color: teal;
+    }
+  }
 }

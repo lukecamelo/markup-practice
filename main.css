@@ -1,5 +1,76 @@
 .navbar {
-  width: 100%;
-  background-color: #BADA55;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .nav-item {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar .nav-item:hover {
+  background-color: darkgray;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: skyblue;
+}
+
+.header .container .header-text {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+  color: white;
+}
+
+.header .container .header-text .tagline {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.header .container .header-text p {
+  font-weight: 300;
+}
+
+.sidebyside .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sidebyside .container .left {
+  width: 50%;
+  padding: 2em;
+  background-color: aquamarine;
+}
+
+.sidebyside .container .right {
+  width: 50%;
+  padding: 2em;
+  color: white;
+  background-color: teal;
 }
 /*# sourceMappingURL=main.css.map */
