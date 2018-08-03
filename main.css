@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ccc;
+  background-color: #65524D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +24,37 @@
   background-color: darkgray;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +62,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: skyblue;
+  background-color: #817E9F;
 }
 
 .header .container .header-text {
@@ -46,6 +77,11 @@
 }
 
 .header .container .header-text p {
+  font-weight: 300;
+}
+
+.sidebyside {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
@@ -64,13 +100,68 @@
 .sidebyside .container .left {
   width: 50%;
   padding: 2em;
-  background-color: aquamarine;
+  background-color: #B5EF8A;
 }
 
 .sidebyside .container .right {
   width: 50%;
   padding: 2em;
+  background-color: #D7F171;
+}
+
+.squares .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.squares .sq {
+  background-color: #817E9F;
+}
+
+.squares .sq-1 {
+  background-color: #7FC29B;
+}
+
+.squares .sq-2 {
+  background-color: #B5EF8A;
+}
+
+.squares .sq-3 {
+  background-color: #D7F171;
+}
+
+.squares .square {
   color: white;
-  background-color: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.squares .square p {
+  padding: 0 3em 0 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .squares .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .squares .square p {
+    padding: 0 1em 0 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
