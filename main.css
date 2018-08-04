@@ -24,6 +24,17 @@
   background-color: darkgray;
 }
 
+.hide {
+  display: none;
+}
+
+.mobile-open {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .nav-desktop {
     display: -webkit-box;

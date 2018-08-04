@@ -26,6 +26,14 @@ $lastsquarebgc: #7FC29B;
   }
 }
 
+.hide {
+  display: none;
+}
+
+.mobile-open {
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .nav-desktop {
     display: flex;
