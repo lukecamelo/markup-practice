@@ -3,6 +3,7 @@ const mobileNav = document.querySelector('.mobile-open')
 
 button.addEventListener('click', (e) => {
   e.preventDefault()
+  e.stopPropagation()
   if(mobileNav.classList.contains('hide')) {
     mobileNav.classList.remove('hide')
   } else {

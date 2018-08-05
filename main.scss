@@ -41,6 +41,9 @@ $lastsquarebgc: #7FC29B;
   .nav-mobile {
     display: none;
   }
+  .mobile-open {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
