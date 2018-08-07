@@ -1,3 +1,12 @@
+body {
+  background-color: #15051a;
+}
+
+#main {
+  margin: 0 auto;
+  width: 75vw;
+}
+
 .navbar {
   background-color: #320E3B;
   display: -webkit-box;

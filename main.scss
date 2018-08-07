@@ -4,6 +4,15 @@ $leftbgc: #7F96FF;
 $rightbgc: #A6CFD5;
 $lastsquarebgc: #DBFCFF;
 
+body {
+  background-color: rgb(21, 5, 26);
+}
+
+#main {
+  margin: 0 auto;
+  width: 75vw;
+}
+
 .navbar {
   background-color: $navbackground;
   display: flex;
