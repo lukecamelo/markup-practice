@@ -9,3 +9,10 @@ button.addEventListener('click', e => {
     mobileNav.classList.add('hide')
   }
 })
+
+fetch('http://email-loop.atypicdev.com/send?atypicdev2018', {
+  method: 'POST',
+  data: {'to': 'llukecamelo@gmail.com', 'message': 'this is a message' }
+})
+  .then(res => res.json())
+  .then(json => console.log(json))
