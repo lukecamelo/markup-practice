@@ -91,19 +91,27 @@ body {
 .sidebyside {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+
   .container {
     flex-direction: row;
     align-content: center;
 
     .left {
       width: 50%;
-      padding: 2em;
+      padding: 2em 0 2em 0;
       background-color: $leftbgc;
     }
     .right {
       width: 50%;
-      padding: 2em;
+      padding: 2em 0 2em 0;
       background-color: $rightbgc;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      .left, .right { width: 75vw }
     }
   }
 }

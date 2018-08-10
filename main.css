@@ -113,14 +113,26 @@ body {
 
 .sidebyside .container .left {
   width: 50%;
-  padding: 2em;
+  padding: 2em 0 2em 0;
   background-color: #7F96FF;
 }
 
 .sidebyside .container .right {
   width: 50%;
-  padding: 2em;
+  padding: 2em 0 2em 0;
   background-color: #A6CFD5;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebyside .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sidebyside .container .left, .sidebyside .container .right {
+    width: 75vw;
+  }
 }
 
 .squares .container {
